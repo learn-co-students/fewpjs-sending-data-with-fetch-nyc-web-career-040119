@@ -16,6 +16,7 @@ function submitData(userName, userEmail){
   }
 
   // Fetch
+  // to pass the test, you require `return` in front of the fetch request
   return fetch('http://localhost:3000/users', configObj)
     .then(function(response) {
       return response.json();
